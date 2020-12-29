@@ -400,24 +400,59 @@ main{
   border-radius: 0 1rem 1rem 0;
 }
 
+/* hiden countrise */
+.hiden_countries{
+  padding: 2rem 0 2rem 2rem;
+  position: absolute;
+  /* top: 20rem;
+  left: 10%; */
+  width: 67.5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  background: #FFFFFF;
+  opacity: 0.8;
+  border: 0.1rem solid #000000;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  z-index: 1;
+}
+
+.hiden_countries div{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+/* end styles hiden countries */
 /* flexes rectangles */
 .rectangles{
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 .first_row, .second_row,
 .third_row, .fourth_row{
   display: flex;
   justify-content: space-between;
 }
-.first_row div,
-.second_row div,
-.third_row div,
-.fourth_row div{
+.first_rectangle, .second_rectangle,
+.third_rectangle, .fourth_rectangle,
+.fifth_rectangle, .six_rectangle,
+.seventh_rectangle, .eigth_rectangle,
+.nine_rectangle, .ten_rectangle{
   margin-top: 2rem;
-  border: 0.1rem solid darkslategray;
+  padding: 4rem 0 19.8rem 4rem; 
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 .first_row div,
 .third_row div{
@@ -425,16 +460,100 @@ main{
   height: 26.3vw;
   /* height 26.3 width of container */
 }
-.second_row div,
-.fourth_row div{
+.third_rectangle, .fourth_rectangle,
+.fifth_rectangle, .eigth_rectangle,
+.nine_rectangle, .ten_rectangle{
   width: 32%;
   height: 26.3vw;
 }
-/* .rectangles:hover{
+/* link yellow */
+.rectangle_link{
+  position: absolute;
+  top: 25rem;
+  left: 4rem;
+}
+.rectangle_link a{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #FFDD30;
+  text-decoration: none;
+}
+.rectangle_link a:hover{
+  opacity: 0.8;
+}
+.rectangle_link a img{
+  width: 2.0rem;
+  margin-left: 0.5rem;
+}
+/* end link yelow */
+.first_rectangle{
+  position: relative;
+  background: url('/images/frames_img/1orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second_rectangle{
+  position: relative;
+  background: url('/images/frames_img/2orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.third_rectangle{
+  position: relative;
+  background: url('/images/frames_img/3orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fourth_rectangle{
+  position: relative;
+  background: url('/images/frames_img/4orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fifth_rectangle{
+  position: relative;
+  background: url(/images/frames_img/5orthodoxographia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.six_rectangle{
+  position: relative;
+  background: url('/images/frames_img/6orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seventh_rectangle{
+  position: relative;
+  background: url('/images/frames_img/7orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eigth_rectangle{
+  position: relative;
+  background: url('/images/frames_img/8orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nine_rectangle{
+  position: relative;
+  background: url('/images/frames_img/9orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ten_rectangle{
+  position: relative;
+  background: url('/images/frames_img/10orthodoxographia.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .third_row:hover,
+.fourth_row:hover{
   display: none;
 } */
-
-
 
 .down_btn_hide{
   display: block;
@@ -455,4 +574,68 @@ main{
   width: 2rem;
   height: 1rem;
   margin-left: 1.2rem;
+}
+
+/* footer styles */
+.footer{
+  padding: 2.6% 9.1%;
+  display: flex;
+  justify-content: space-between;
+  background: #262626;
+}
+.footer_left{
+  width: 30%;
+}
+.footer span:nth-of-type(1){
+  display: block;
+  margin-bottom: 2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  opacity: 0.7;
+}
+.footer_left span:nth-of-type(2){
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  opacity: 0.7;
+}
+.footer_nav, .footer_right{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.footer_nav{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+}
+.footer_nav a{
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer_nav a:nth-of-type(5){
+  text-transform: unset;
+}
+.footer_right{
+  text-align: right;
+}
+.footer_right_social{
+  padding-left: 53%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
