@@ -1,0 +1,458 @@
+/* lato-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v17-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/lato-v17-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato-v17-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/lato-v17-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato-v17-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/lato-v17-latin-ext_latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-500 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-600 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-700 - latin_cyrillic-ext_cyrillic */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v15-latin_cyrillic-ext_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }
+  html {
+    font-family: sans-serif; /* 1 */
+    /* 62.5% is 10px height of text */
+    font-size: 62.5%;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
+  }
+  body{
+    color: white;
+  }
+
+  header{
+    margin: 0 auto;
+    width: 100%;
+    background: url('/images/orthodoxographiaBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.header_wrapper{
+  position: relative;
+      /* width: 144rem; */
+      /* height: 104.8rem;  */
+    width: 100%;
+  }
+ nav{
+   position: relative;
+   top: 1.4rem;
+   width: 82%;
+   margin: 0 auto;
+   line-height: 4.8rem;
+   display: flex;
+   justify-content: space-between;
+ }
+ .nav_links{
+   margin-top: 1.5rem;
+ }
+ .nav_links a{
+    margin-left: 5rem;
+    color: inherit;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+    text-decoration:none;
+ }
+ .nav_links a:nth-child(5){
+   text-transform: none;
+ }
+ .nav_links a:hover{
+  color: #FFDD30;
+ }
+ .nav_links a:active{
+   color: #FFDD30;
+   border: none;
+ }
+
+.change_language{
+  position: relative;
+  top: 0.8rem;
+  left: 82%;
+}
+.change_language select{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+  background: transparent;
+}
+.change_language select option{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+  background: #303030;
+}
+.change_language select option:hover{
+  background: #FFEE97;
+}
+
+.header_text_fields{
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 6.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.header_text_fields span{
+  display: block;
+}
+.header_text_fields span:nth-of-type(1){
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.5rem;
+  line-height: 4.2rem;
+}
+.header_text_fields span:nth-of-type(2){
+  margin-top: 0.5rem;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6rem;
+  line-height: 7.2rem;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+.header_text_fields span:nth-of-type(3){
+  margin-top: 2.5rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.text_btn{
+  margin-top: 3rem;
+  width: 27.2rem;
+  height: 5rem;
+  color: #000000;
+  background: #FFDD30;
+  border-radius: 0.4rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  border: none;
+}
+.text_btn:hover{
+  background: #FFEE97;
+}
+.best_selection{
+  width: 43%;
+  margin-top: 7.2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  background: #BCB3B3;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.head_best_selection{
+  width: 40%;
+  margin-left: 6.5%;
+  margin-top: 2.5rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #303030;
+  border-bottom: 0.1rem solid #303030;
+}
+.best_selection ul{
+  margin-top: 1.3rem;
+  margin-left: 6.5%;
+  margin-right: 7rem;
+  margin-bottom: 3.5rem;
+}
+.best_selection ul li{
+  margin-top: 1rem;
+}
+.best_selection ul li p{
+  display: inline;
+  margin-left: 1.5rem;
+}
+.best_selection ul li:nth-child(1){
+  color: #303030;
+}
+
+.social{
+  position: relative;
+  top: -47rem;
+  left: 97%;
+  width: 2.4%;
+  display: flex;
+  flex-direction: column;
+}
+.fb, .round, .youtube_icon, .tw{
+  margin-bottom: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.fb:hover, .round:hover,
+.youtube_icon:hover, .tw:hover{
+  opacity: 0.6;
+}
+
+.ellipses{
+  position: relative;
+  top: -20rem;
+  width: 26%;
+  margin-left: 74%;
+  display: flex;
+  justify-content: space-between;
+}
+.ellipses button{
+  background: transparent;
+  border: none;
+}
+.ellipses button:nth-of-type(1){
+  margin-right: 4rem;
+}
+.ellipses button:nth-of-type(2){
+  margin-left: 4rem;
+}
+.ellipses button img{
+  width: 4rem;
+  height: 4rem;
+}
+.inner_ellipses{
+  position: relative;
+  padding-top: 1.2rem;
+  /* width: 48%; */
+  display: flex;
+  justify-content: space-between;
+}
+.inner_ellipses:hover{
+  padding-top: 1rem;
+}
+.inner_ellipses div{
+  margin-right: 2rem;
+  
+}
+.inner_ellipses div:nth-of-type(1){
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url('/images/white_ellipse.png');
+}
+.inner_ellipses div:nth-of-type(2),
+.inner_ellipses div:nth-of-type(3),
+.inner_ellipses div:nth-of-type(4){
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url('/images/white_ellipse.png');
+  background-repeat: no-repeat;
+}
+.inner_ellipses div:nth-of-type(4){
+  margin-right: 0;
+}
+.inner_ellipses div:hover{
+  width: 2rem;
+  height: 2rem;
+  background: url('/images/yellow_ellipse.png');
+}
+
+/* main */
+main{
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 11rem;
+}
+.historical_churches{
+  position: relative;
+  width: 38.5%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.historical_churches span{
+  position: absolute;
+  left: 8%;
+  bottom: 1%;
+  display: inline;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: #000000;
+}
+.historical_churches div{
+  width: 48.5%;
+  /* height: 1.4rem; */
+}
+.historical_churches div:nth-of-type(1){
+  margin-top: 1rem;
+  border-left: 0.3rem solid #FFDD30;
+  border-bottom: 0.3rem solid #FFDD30;
+}
+.historical_churches div:nth-of-type(2){
+  margin-bottom: 1rem;
+  border-right: 0.3rem solid #FFDD30;
+  border-top: 0.3rem solid #FFDD30;
+}
+.main_select{
+  width: 40%;
+  height: 5rem;
+  margin-top: 4rem;
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+.choose_country_btn{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  width: 65%;
+  border: 3px solid #FFDD30;
+  box-sizing: border-box;
+  border-radius: 1rem 0 0 1rem;
+  background: inherit;
+}
+.choose_country_btn img{
+  width: 1.5rem;
+  height: 0.75rem;
+  margin-left: 3rem;
+}
+.main_select div{
+  width: 35%;
+  padding-top: 3%;
+  padding-left: 3%;
+  background: #FFDD30;
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* flexes rectangles */
+.rectangles{
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.first_row, .second_row,
+.third_row, .fourth_row{
+  display: flex;
+  justify-content: space-between;
+}
+.first_row div,
+.second_row div,
+.third_row div,
+.fourth_row div{
+  margin-top: 2rem;
+  border: 0.1rem solid darkslategray;
+}
+.first_row div,
+.third_row div{
+  width: 49%;
+  height: 26.3vw;
+  /* height 26.3 width of container */
+}
+.second_row div,
+.fourth_row div{
+  width: 32%;
+  height: 26.3vw;
+}
+/* .rectangles:hover{
+  display: none;
+} */
+
+
+
+.down_btn_hide{
+  display: block;
+  margin: 3rem auto 10rem auto;
+  width: 19.6rem;
+  height: 5.1rem;
+  border: 0.1rem solid #000000;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  text-transform: capitalize;
+}
+.down_btn_hide img{
+  width: 2rem;
+  height: 1rem;
+  margin-left: 1.2rem;
+}
