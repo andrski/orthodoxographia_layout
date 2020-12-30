@@ -268,3 +268,7 @@ main{
     display: flex;
     justify-content: space-between;
   }
+  .fb:hover, .round:hover,
+.youtube_icon:hover, .tw:hover{
+  opacity: 0.6;
+}
