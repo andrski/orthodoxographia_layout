@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/fonts.css">
+    <link rel="stylesheet" href="/CSS/contacts.css">
+    <title>Контакты</title>
 </head>
 <body>
-    
+    <header>
+        <div class="nav_logo">
+            <a href="/"><img src="/images/orthodoxographia_logo.png" alt="orthodoxographia logo"></a>
+        </div>
+
+        <nav>
+            <div class="nav_links">
+                <a href="/">главная</a>
+                <a href="#">фото</a>
+                <a href="/video.html">видео</a>
+                <a href="#">блог</a>
+                <a href="#">О нас</a>
+                <a href="/contacts.html">контакты</a>
+            </div>
+        </nav>
+
+        <div class="change_language">
+            <select>
+                <option class="option_ru">Русский</option>
+                <option>English</option>
+                <option>Deutsche</option>
+              </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="contacts_wrapper">
+            <div class="main_video">
+                <div></div>
+                <div></div>
+               <span>Контакты</span> 
+            </div>
+
+            <div class="inner_contacts_wrap">
+                <form>
+                    <span>Напишите нам своё мнение,вопросы и предложения:</span>
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" placeholder="Ваше имя">
+                    <label for="email">e–mail *</label>
+                    <input type="email" id="email" placeholder="Ваш email">
+                    <label for="obj">Объект</label>
+                    <input type="text" id="obj" >
+                    <label for="msg">Сообщение</label>
+                    <textarea placeholder="Введите сообщение"  rows="10">
+                        
+                    </textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+
+                <div class="contacts_map">
+                    <div></div>
+                    <span><p>Адрес:</p> Akademie für Wissenschaft und Bildung e.V. (Akademie der Maico-Mannesmann Group)</span>
+                    <span>Adenauerallee 170
+                        53113 Bonn
+                        Deutschland</span>
+                    <span><p>Телефон:</p>  +49 228 2425 9580</span>
+                    <span><p>e–mail:</p>  akademie@maico-mannesmann.ag</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer_left">
+            <span>
+                Copyright © 2015-2020 MAICO-MANNESMANN AKADEMIE FÜR WISSENSCHAFT UND BILDUNG E.V.
+            </span>
+            <br>
+            <span>
+                Impressum & Datenschutz
+            </span>
+        </div>
+        <div class="footer_nav">
+            <a href="/">главная</a>
+            <a href="#">фото</a>
+            <a href="/video.html">видео</a>
+            <a href="#">блог</a>
+            <a href="#">О нас</a>
+            <a href="/contacts.html">контакты</a>
+        </div>
+        <div class="footer_right">
+            <span>
+                akademie@maico-mannesmann.ag
+            </span>
+            <span>
+                Мы в социальных сетях:
+            </span>
+            <div class="footer_right_social">
+                <div class="fb"><a href="#" ><img src="/images/fb_icon.png" alt="orthodoxographia icon"></a></div>
+                <div class="round"><a href="#"><img src="/images/round_icon.png" alt="orthodoxographia icon"></a></div>
+                <div class="youtube_icon"><a href="#"><img src="/images/youtube_icon.png" alt="orthodoxographia icon"></a></div>
+                <div class="tw"><a href="#"><img src="/images/tw_icon.png" alt="orthodoxographia icon"></a></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
