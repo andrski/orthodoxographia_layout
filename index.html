@@ -10,7 +10,7 @@
     <title>main page</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header_wrapper">
             <nav>
                 <div class="nav_logo">
@@ -56,14 +56,14 @@
                     <div class="tw"><a href="#"><img src="/images/tw_icon.png" alt="orthodoxographia icon"></a></div>
                 </div>
                 <div class="ellipses">
-                    <button><img src="/images/left_round-arrow.png" alt="orthodoxographia ellipse"></button>
+                    <button id="changBGleft"><img src="/images/left_round-arrow.png" alt="orthodoxographia ellipse"></button>
                     <div class="inner_ellipses">
                         <div></div>
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-                    <button><img src="/images/right_round_arrow.png" alt="orthodoxographia ellipse"></button>
+                    <button id="changBGright"><img src="/images/right_round_arrow.png" alt="orthodoxographia ellipse"></button>
                 </div>
             </div>      
         </div>
@@ -75,22 +75,22 @@
            <span>Исторические храмы</span> 
         </div>
         <div class="main_select">
-            <button class="choose_country_btn">выберите страну<img src="/images/down_arrow_choose.png" alt="down arrow"></button>
-            <div>Все страны</div>
+            <button class="choose_country_btn" id="choose_country_btn">выберите страну<img src="/images/down_arrow_choose.png" alt="down arrow"></button>
+            <div id="all_countries">Все страны</div>
         </div>
 
-        <div class="hiden_countries">
-            <div>Албания</div>
-            <div>Германия</div>
-            <div>Греция</div>
-            <div>Грузия</div>
-            <div>Египет</div>
-            <div>Израиль</div>
-            <div>Италия</div>
-            <div>Румыния</div>
-            <div>Сербия</div>
-            <div>Турция</div>
-            <div>Франция</div>
+        <div class="hiden_countries" id="hiden_countries">
+            <div id="albania">Албания</div>
+            <div id="germany">Германия</div>
+            <div id="grecia">Греция</div>
+            <div id="gruzia">Грузия</div>
+            <div id="egipt">Египет</div>
+            <div id="izrael">Израиль</div>
+            <div id="italy">Италия</div>
+            <div id="rumunia">Румыния</div>
+            <div id="serb">Сербия</div>
+            <div id="turc">Турция</div>
+            <div id="franc">Франция</div>
         </div>
 
 
@@ -200,5 +200,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/index.js"></script>
 </body>
 </html>
