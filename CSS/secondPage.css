@@ -1,0 +1,360 @@
+header{
+    padding: 1.1rem 9.4% 1.1rem 8.8%;
+    display: flex;
+    justify-content: space-between;
+    background: #303030;
+}
+.nav_logo{
+    width: 17.5rem;
+    height: 4.8rem;
+}
+nav{
+    width: 40%;
+    margin-top: 1.2rem;
+}
+.nav_links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav a:nth-of-type(5){
+    text-transform: unset;
+}
+nav a:hover{
+    opacity: 0.8;
+}
+.change_language{
+    text-align: center;
+    padding-top: 0.6%;
+    width: 13.6rem;
+    height: 4rem;
+    border: 0.1rem solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.change_language select{
+    background: inherit;
+    color: #FFFFFF;
+    border: none;
+}
+/* main */
+ /* styles for hidden elements */
+.dark{
+    background: black;
+    opacity: 0.7;
+    z-index: 5;
+}
+.hidden_picture{
+    position: absolute;
+    width: 85%;
+    top: 10.5rem;
+    left: 7.5%;
+    height: 72rem;
+    display: flex;
+    justify-content: space-between;
+    background: url(/images/second_page_img/hidden_picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 4;
+}
+.hidden_picture button{
+    width: 5rem;
+    height: 5rem;
+    margin: 7rem 5% 0 90%;
+    background: inherit;
+    border: none;
+}
+.hidden_picture button:hover{
+    opacity: 0.6;
+}
+/* end hidden styles */
+
+main{
+    padding: 3.1rem 9% 17.1rem 9%;
+    
+}
+.map_big_photo{
+    display: flex;
+}
+.map{
+    width: 50%;
+}
+
+.inner_map_wrapper{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #000000;
+    padding: 5rem 16% 3.8rem 12%;
+    background: #FFEE97;
+    border-radius: 0px 0px 0px 1rem;
+}
+.inner_map_wrapper span:nth-of-type(2){
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.map_photo{
+    width: 100%;
+    height: 16rem;
+    margin-top: 3rem;
+    background: url(/images/second_page_img/secongP_map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* crazy layout yellow borders */
+.main_video{
+    position: relative;
+    width: 75%;
+    height: 9rem;
+    margin: 3.1rem auto 3.8rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_video span{
+    position: absolute;
+    left: 5%;
+    display: inline;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    color: #000000;
+  }
+  .main_video div{
+    width: 48.5%;
+    /* height: 1.4rem; */
+  }
+  .main_video div:nth-of-type(1){
+    margin-top: 1rem;
+    border-left: 0.3rem solid #FFDD30;
+    border-bottom: 0.3rem solid #FFDD30;
+  }
+  .main_video div:nth-of-type(2){
+    margin-bottom: 1rem;
+    border-right: 0.3rem solid #FFDD30;
+    border-top: 0.3rem solid #FFDD30;
+  }
+
+
+  .big_photo{
+    width: 50%;
+    background: url(/images/second_page_img/orthodoxographia1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big_photo div{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+.big_photo button{
+    background: inherit;
+    border: none;
+}
+.big_photo button:hover{
+    opacity: 0.6;
+}
+
+.photos_near{
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+.region_else{
+    position: absolute;
+    top: -3vw;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: #000000;
+
+}
+.photos_near div{
+    position: relative;
+    width: 49%;
+    padding: 4rem 8% 22.2rem 7%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.427829) 44.57%, rgba(0, 0, 0, 0) 100%);
+}
+.photos_near div span{
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.photos_near div a{
+    position: absolute;
+    top: 22rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #FFDD30;
+    text-decoration: none;
+}
+.photos_near div a:hover{
+    transform: translate(0.5rem,-0.2rem);
+    -webkit-transform: translate(0.5rem,-0.2rem); /** Safari & Chrome **/
+    -o-transform: translate(0.5rem,-0.2rem); /** Opera **/
+    -moz-transform: translate(0.5rem,-0.2rem); /** Firefox **/
+}
+
+.photos_near div:nth-of-type(1){
+    background: url(/images/second_page_img/Mask1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.427829) 44.57%, rgba(0, 0, 0, 0) 100%); */
+}
+.photos_near div:nth-of-type(2){
+    background: url(/images/second_page_img/Mask2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.427829) 44.57%, rgba(0, 0, 0, 0) 100%); */
+}
+
+.form{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem;
+    box-shadow: 0px 0.4rem 1.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+}
+.form span{
+    margin-bottom: 2rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: #000000;
+}
+.form_inner_wrapper input{
+    width: 70%;
+    padding-left: 5%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #000000;
+    opacity: 0.5;
+}
+.form_inner_wrapper button{
+    width: 25%;
+    margin-left: 1.5rem;
+    padding: unset;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 3.3rem;
+    color: #FFFFFF;
+    background: #FFDD30;
+    border-radius: 0.4rem;
+    border: none;
+}
+.form_inner_wrapper button:hover{
+    border: 0.1rem solid darkorange;
+}
+
+
+   /* footer styles */
+.footer{
+    padding: 2.6% 9.1%;
+    display: flex;
+    justify-content: space-between;
+    background: #262626;
+  }
+  .footer_left{
+    width: 30%;
+  }
+  .footer span:nth-of-type(1){
+    display: block;
+    margin-bottom: 2rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    opacity: 0.7;
+  }
+  .footer_left span:nth-of-type(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    opacity: 0.7;
+  }
+  .footer_nav, .footer_right{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .footer_nav{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.8rem;
+  }
+  .footer_nav a{
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .footer_nav a:nth-of-type(5){
+    text-transform: unset;
+  }
+  .footer_right{
+    text-align: right;
+  }
+  .footer_right_social{
+    padding-left: 53%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fb:hover, .round:hover,
+.youtube_icon:hover, .tw:hover{
+  opacity: 0.6;
+}
+  
